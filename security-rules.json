@@ -1,0 +1,14 @@
+// Firebase security rules - should go to "Security & Rules" tab of database
+{
+  "rules": {
+    // won't let people delete an existing room
+    ".write": "!data.exists()",
+    ".read": true,
+    "$room": {
+      // only the restaurant owner can edit the data
+      ".write":
+        "auth != null && (!data.exists() || data.child('owner').val() === auth.uid)",
+      ".read": true
+    }
+  }
+}
