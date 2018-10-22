@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "./Header";
+import Restaurant from './Restaurant';
 
 export default class App extends React.Component {
   render() {
@@ -7,6 +8,7 @@ export default class App extends React.Component {
       <div className="catch-of-the-day">
         <div className="menu">
           <Header />
+          <Restaurant />
         </div>
         {/* <Inventory />
         <Order /> */}
