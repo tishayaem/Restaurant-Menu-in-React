@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from "./Header";
 import Restaurant from './Restaurant';
+import Inventory from './Inventory';
+import Order from './Order';
 
 export default class App extends React.Component {
   render() {
@@ -10,8 +12,8 @@ export default class App extends React.Component {
           <Header />
           <Restaurant />
         </div>
-        {/* <Inventory />
-        <Order /> */}
+        <Order />
+        <Inventory />
       </div>
     );
   }
