@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "./Header";
-import Restaurant from './Restaurant';
 import Inventory from './Inventory';
 import Order from './Order';
 
