@@ -1,8 +1,6 @@
 import React from 'react';
 
-export default class Header extends React.Component {
-  render() {
-    return (
+ const Header = ({tagline}) => (
       <header className="top">
         <h1>
           Catch
@@ -14,9 +12,9 @@ export default class Header extends React.Component {
         </h1>
 
         <h3 className="tagline">
-          <span>Fresh daily</span>
+          <span>{tagline}</span>
         </h3>
       </header>
     );
-  }
-}
+
+    export default Header;
